@@ -1,0 +1,82 @@
+
+.center {
+    width: 600px;
+    height: 500px;
+    background-color: ;
+
+    position: absolute;
+    top: 0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.task-item-edit {
+    position: relative;
+    margin-left: 20px;
+    font-family: Courier New;
+    font-weight: 600;
+    font-size: 25px;
+    width: 350px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+}
+
+.task-checkbox {
+    float: left;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.form-control {
+    margin-top: 15px;
+}
+
+.tasks-field {
+    margin-top: 15px
+}
+
+.list-content {
+    font-weight: 600;
+    font-family: Courier New;
+    font-size: 17px;
+    width: 550px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-content-task {
+    
+}
+
+.list-header {
+    font-weight: 600;
+    font-family: Courier New;
+    font-size: 25px;
+    width: 500px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-group-item {
+    background-color: #99CCFF;
+}
+
+.tasks-edit {
+    margin: 15px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}

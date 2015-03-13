@@ -1,0 +1,20 @@
+
+<!--          LIST VIEW          -->
+
+<div class="list-group-item">
+	<form>
+		<input type="text" class="form-control" placeholder="Your new to-do list" ng-model="newList">
+		<br>
+		<input type="submit" value="Add To-do List" ng-click="addList()" class="btn btn-primary">
+	</form>
+</div>
+<div class="list-group-item" ng-repeat="list in contentList">
+	<p class="list-header"> 
+		{{list.parentList}} 
+	</p>
+	<button type="button" ng-click="deleteList(list.parentList)" class="btn btn-warning"> 
+		Del list 
+	</button>
+	<a ui-sref="tasks({ listID: list.parentList })" class="btn btn-default btn-default active">Edit list</a>		
+</div>
+ 

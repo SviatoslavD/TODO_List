@@ -1,0 +1,25 @@
+
+<!--          TASKS EDIT VIEW          -->
+
+<div ng-controller="taskController" class="list-group-item">
+	<p class="list-header"> 
+		{{listID}} 
+	</p>
+	<form ng-submit="addTask()">
+		<ul style="list-style-type:none">
+			<li>
+				<div ng-repeat="task in contentTask | filter: listID">
+					<div class="tasks-edit">
+						<input class="task-checkbox" type="checkbox" ng-model="task.checkbox" ng-click="setBoxValue(task)"> 
+						<span class="task-item-edit" ng-class="{strike:task.checkbox == true}"> {{task.text}} </span>
+						<button type="button" ng-click="deleteTask(task.timeStamp)" class="btn btn-warning"> Del </button>
+					</div>
+				</div>	
+			</li>
+		</ul>
+		<input class="form-control" type="text" placeholder="What do you need to do?" ng-model="newTask"> 
+		<br>
+		<input class="btn btn-default btn-default active" type="submit" value="Add to-do task">
+		<a ui-sref="lists" class="btn btn-primary"> Back to lists </a>
+	</form>
+</div>
